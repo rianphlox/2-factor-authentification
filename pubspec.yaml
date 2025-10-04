@@ -1,0 +1,81 @@
+name: qkey
+description: A 2FA Authentication app with secure OTP management.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  cupertino_icons: ^1.0.2
+
+  # For OTP generation (TOTP/HOTP)
+  otp: ^3.1.4
+  
+  # For QR code scanning (alternative - more compatible)
+  mobile_scanner: ^3.5.7
+  
+  # For generating QR codes (optional)
+  qr_flutter: ^4.1.0
+  
+  # For secure local storage of secrets
+  flutter_secure_storage: ^9.0.0
+  
+  # For biometric authentication
+  local_auth: ^2.1.6
+  
+  # For state management
+  provider: ^6.1.1
+  
+  # For permissions (camera access for QR scanning)
+  permission_handler: ^11.1.0
+  
+  # For crypto operations
+  crypto: ^3.0.3
+  
+  # For sharing/copying OTP codes
+  share_plus: ^7.2.1
+  
+  # For URL parsing (QR codes)
+  uri: ^1.0.0
+  
+  # For random string generation
+  random_string: ^2.3.1
+  
+  # For theme/dark mode persistence
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices.
+  flutter_lints: ^3.0.0
+
+  # For generating app icons
+  flutter_launcher_icons: ^0.13.1
+
+# For information on the generic Dart part of this file, see
+# https://dart.dev/tools/pub/pubspec
+
+flutter:
+  uses-material-design: true
+
+  # Add your app icon asset
+  assets:
+    - assets/icon/app_icon.png
+
+# Configuration for flutter_launcher_icons
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
