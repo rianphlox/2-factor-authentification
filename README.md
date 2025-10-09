@@ -29,9 +29,7 @@ A modern, secure, and user-friendly two-factor authentication (2FA) app built wi
 - **Theme Options**: Light, Dark, or System theme modes
 - **Persistent Settings**: Your preferences are saved and restored
 
-## 📱 Screenshots
 
-*Add screenshots of your app here when ready to publish*
 
 ## 🚀 Getting Started
 
@@ -45,7 +43,7 @@ A modern, secure, and user-friendly two-factor authentication (2FA) app built wi
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/rianphlox/2-factor-authentification.git auth_app
    cd auth_app
    ```
 
